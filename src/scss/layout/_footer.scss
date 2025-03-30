@@ -1,10 +1,38 @@
 @use '../core/variables' as vars;
 
-.page__footer {
-    position: fixed;
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     left: 0;
     bottom: 0;
-    width: 100vw;
     padding: 1rem;
-    color: vars.$color-secondary;
+    color: #b6c8c9;
+    background-color: vars.$color-primary;
+    margin-top: 0px;
+}
+
+.footer a {
+    color: #b6c8c9;
+    text-decoration: none;
+}
+.footer ul {
+    margin-top: 2rem;
+}
+.footer ul li {
+        list-style-type: none;
+        margin-top: 0.5rem;
+}
+i .fa-solid .fa-arrow-up {
+    color: b6c8c;
+}
+.footer__redes {
+    padding-top: 1.5rem;
+}
+
+.footer__flecha {
+    width: 1rem;
+    color: white;
+    text-align: right;
+    width: 80vw;
 }
