@@ -31,8 +31,27 @@ i .fa-solid .fa-arrow-up {
 }
 
 .footer__flecha {
-    width: 1rem;
+    width: 5rem;
     color: white;
-    text-align: right;
-    width: 80vw;
+    position: relative;
+    top: 1rem;
+    left: 8rem;
+}
+.footer nav {
+    margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+    .footer nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;    
+    ul {
+        width: 20vw;
+    }
+    }
+.footer__flecha {
+    top: -0.5rem;
+    left: 10rem;
+
+}
 }

@@ -4,7 +4,7 @@ main {
   background-color: vars.$color-secondary;
 }
 .main__volver {
-  width: 40vw;
+  width: 60vw;
   display: grid;
   margin-left: auto;
   margin-right: auto;
@@ -12,6 +12,11 @@ main {
   img {
     margin-top: 3rem;
     margin-bottom: 2rem;
+  }
+  article {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   h1 {
     font-weight: 600;
@@ -55,7 +60,10 @@ main {
 }
 
 .main__disfruta {
-  padding: 2rem;
+  padding: 0;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
 }
 .main__disfruta h1 {
   margin: 1rem;
@@ -65,19 +73,19 @@ main {
   margin: 1rem;
 }
 .main__disfruta button {
-  margin: 1rem;
+  margin: 3rem;
 }
+
 .main__imagen-lavabo {
   width: 100%;
 }
-
 @media (min-width: 900px) {
   .main__volver {
     width: 60vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:2fr;
     row-gap: 2rem;
-    column-gap: 3rem;
+    column-gap: 3rem; 
   h1 {
     grid-column: span 3;
     height: 3rem;
@@ -106,5 +114,30 @@ main {
       width: 11vw;
     }
   }
+
+.main__disfruta {
+  flex-direction:row;
+  justify-content: space-between;
+  .main__imagen-lavabo {
+    width: 50vw;
+  }
+  .main__disfruta__bloque {
+    width: 30vw;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: left;
+      h1, p {
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+  }
+  .button_comprar_ahora {
+    margin-left: 0px;
+    margin-top: 1rem;
+  }
+}
+.main__envio {
+  margin-bottom: 0;
+}
 }
 
